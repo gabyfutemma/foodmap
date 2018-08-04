@@ -1,1 +1,207 @@
-/*Add your CSS*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  height: 100%;
+  font-family: "Comfortaa","Kaushan Script", sans-serif,  cursive;
+  font-size: 16px;
+  line-height: 1.71429;
+}
+
+h1, h2, h3, h4, h5, h6, hr, a, p {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.splash {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foodmap-logo {
+  font-family: "Kaushan Script";
+  font-size: 5rem;
+  font-weight: 400;
+  color: #FF8F33;
+}
+
+.foodmap-icon {
+  height: 10vh;
+}
+
+.splash-display {
+  display: none;
+}
+
+.main-display {
+  display: none;
+}
+
+.foodmap-header {
+  background-color: #FF8F33;
+}
+
+#map {
+  border: 3px solid #FF6144;
+  height: 40vh;
+  width: 100%;
+}
+
+.foodmap-logo-body {
+  font-family: "Kaushan Script";
+  font-size: 3rem;
+  font-weight: 400;
+  color: #FFF;
+}
+
+.foodmap-icon-body {
+  height: 8vh;
+}
+
+.foodmap-divider {
+  border: 0;
+  height: 4px;
+  background-image: -webkit-linear-gradient(left, #FFB533, #FFFD40, #FFB533);
+  background-image: -moz-linear-gradient(left, #FFB533, #FFFD40, #FFB533);
+  background-image: -ms-linear-gradient(left, #FFB533, #FFFD40, #FFB533);
+  background-image: -o-linear-gradient(left, #FFB533, #FFFD40, #FFB533);
+}
+
+.foodmap-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #FF8F33;
+}
+
+.foodmap-input {
+  border: 2px solid #FF6144;
+  padding-left: 0.5rem;
+}
+
+.foodmap-input::placeholder {
+  color: #FF8F33;
+}
+
+.foodmap-input:focus{
+  box-shadow: none;
+  border-color: #FF8F33;
+}
+
+.foodmap-search-btn {
+  background-color: #FF6144;
+  border: 2px solid #FF6144;
+  color: #FF6144;
+}
+
+.fa-search {
+  color: #FFF;
+}
+
+.type-food {
+  background-color: #D80556;
+  font-family: "Kaushan Script";
+  font-size: 1.1rem;
+  color: #FFF;
+}
+
+.type-food:hover {
+  border: 1px solid #D80556;
+  background-color: #FFF;
+  color: #D80556;
+}
+
+.type-food:focus, .type-food:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.foodmap-results {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FF8F33;
+}
+
+.name-thumb {
+  font-family: "Kaushan Script";
+  font-weight: 700;
+  color: #D80556;
+}
+
+.img-thumb {
+  background-size: cover;
+  background-position: center;
+  height: 22vh;
+  width: 22vh;
+  border: 3px solid #FF6144;
+}
+
+.img-thumb:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.foodmap-modal-header {
+  border-bottom: 3px solid #FFB533;
+}
+
+.name-modal {
+  font-family: "Kaushan Script";
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FF8F33;
+}
+
+.img-modal {
+  height: 25vh;
+  border: 3px solid #FFB533;
+}
+
+.foodmap-modal-body {
+  background-color: #FF8F33;
+}
+
+.info-modal {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.foodmap-modal-footer {
+  border-top: 3px solid #FFB533;
+}
+
+.foodmap-modal-btn {
+  background-color: #D80556;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.foodmap-modal-btn:hover {
+  background-color: #FFF;
+  border: 1px solid #D80556;
+  color: #D80556;
+}
