@@ -13,7 +13,6 @@ $(document).ready(function() {
           <div id="img${index}" class="img-thumb" alt=${restaurant.name} style="background-image: url('${restaurant.image}')"> </div>
         </div>
       `);
-
       $("#img" + index).on("click", function() {
         $("#foodmapModal").modal();
         $(".name-modal").html(restaurant.name);
@@ -28,21 +27,21 @@ $(document).ready(function() {
     var restaurantInput = $(".foodmap-input").val();
     $(".foodmap-input").val('');
     var restaurantFilter = restaurantes.filter(rest => restaurantInput === rest.name || restaurantInput === rest.type);
-    initMap(restaurantFilter);
     setImageAndModal(restaurantFilter);
+    initMap(restaurantFilter);
   });
 
   $(".type-food").each(function() {
     $(this).click(function() {
       var optionFood = $(this).val();
       var restaurantFilter = restaurantes.filter(rest => optionFood === rest.type);
-      initMap(restaurantFilter);
       setImageAndModal(restaurantFilter);
+      initMap(restaurantFilter);
     });
   });
 
-  initMap(restaurantes);
   setImageAndModal(restaurantes);
+  initMap(restaurantes);
 });
 
 function initMap(restaurantsFilter) {
