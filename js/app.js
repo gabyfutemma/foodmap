@@ -8,7 +8,7 @@ $(document).ready(function() {
     $(".restaurant-thumbnail").empty();
     result.forEach((restaurant, index) => {
       $(".restaurant-thumbnail").append(`
-        <div class="mt-3 mr-3">
+        <div class="mt-2 mr-3">
           <p class="name-thumb">${restaurant.name}</p>
           <div id="img${index}" class="img-thumb" alt=${restaurant.name} style="background-image: url('${restaurant.image}')"> </div>
         </div>
